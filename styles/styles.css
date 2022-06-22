@@ -6,6 +6,13 @@
   --secondary-color: #292c2f;
   --primary-btn-color: #219ebc;
   --secondary-btn-color: #e9c46a;
+  --padding-XXS: 0.5rem;
+  --padding-XS: 1rem;
+  --padding-S: 1.2rem;
+  --padding-M: 1.5rem;
+  --padding-L: 2rem;
+  --padding-XL: 3rem;
+  --gap-S: 1.2rem;
 }
 
 * {
@@ -31,7 +38,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: var(--padding-XS);
   background-color: var(--secondary-color);
 }
 
@@ -46,7 +53,7 @@ body {
 
 .title {
   text-align: center;
-  padding: 1rem 0;
+  padding: var(--padding-XS) 0;
   margin-top: 2rem;
   font-size: 48px;
 }
@@ -54,8 +61,8 @@ body {
 .container-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  padding: 1.2rem;
-  gap: 1.2rem;
+  padding: var(--padding-S);
+  gap: var(--gap-S);
 }
 
 .card {
@@ -81,7 +88,7 @@ body {
   background-color: var(--secondary-color);
   text-align: center;
   color: var(--white);
-  padding: 3rem 0;
+  padding: var(--padding-L) 0;
 }
 
 .card-info > p {
@@ -93,15 +100,15 @@ body {
 .card-info {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  padding: 1.5rem;
+  gap: var(--gap-S);
+  padding: var(--padding-M);
 }
 
 .primary-button {
   background-color: var(--primary-btn-color);
   color: var(--white);
   text-decoration: none;
-  padding: 0.5rem 2rem;
+  padding: var(--padding-XXS) var(--padding-L);
   border-radius: 0.2rem;
   display: table;
   text-align: center;
@@ -113,27 +120,23 @@ body {
   font-weight: bold;
 }
 
-.name-character{
-text-align: center;
-font-weight: bolder;
-
+.name-character {
+  text-align: center;
+  font-weight: bolder;
 }
 
-
-.search-txt{
+.search-txt {
   border-radius: 0.3rem;
   text-align: center;
   height: 1.2rem;
 }
 
-.search-btn{
+.search-btn {
   color: var(--primary-color);
 }
 
-
-@media(min-width:768px){
-.logo-image{
+@media (min-width: 768px) {
+  .logo-image {
     width: 25.3rem;
-}
-
+  }
 }
